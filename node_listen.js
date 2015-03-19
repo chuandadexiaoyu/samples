@@ -1,7 +1,7 @@
 var http = require('http');
 
-http.createServer(function (req, res) {
-  console.log("Start Connect!");
+var server = http.createServer(function (req, res) {
   res.writeHead(200, {'Content-Type': 'text/plain'});
   res.end('Hello Guest\n');
+  console.log("end request");
 }).listen(1337, "127.0.0.1");
